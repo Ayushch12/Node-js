@@ -10,10 +10,12 @@
 //     createUser,
 // };
 
+const express = require("express");
 const userController = require("./controller");
 
-const rouer = express.Router();
+const router = express.Router();
 
 router.post("/user", userController.createUser);
 
 module.exports = router;
+
